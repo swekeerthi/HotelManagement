@@ -1,0 +1,48 @@
+INPUT
+{
+    FONT-WEIGHT : normal;
+    FONT-SIZE : 8pt;
+    FONT-FAMILY : Verdana , Arial , helvetica , sans-serif;
+}
+TEXTAREA
+{
+    FONT-WEIGHT : normal;
+    FONT-SIZE : 8pt;
+    COLOR : rgb(0 , 0 , 0);
+}
+SELECT, OPTION, LI
+{
+    FONT-WEIGHT : normal;
+    FONT-SIZE : 8pt;
+    FONT-FAMILY : Verdana , Arial , helvetica , sans-serif;
+}
+TABLE.notebook
+{
+    BORDER-RIGHT : 0px;
+    BORDER-TOP : 0px;
+    BORDER-LEFT : 0px;
+    WIDTH : 90%;
+    BORDER-BOTTOM : 0px;
+}
+TABLE.notepad
+{
+    BORDER-RIGHT : 0px;
+    BORDER-TOP : 0px;
+    BORDER-LEFT : 0px;
+    WIDTH : 70%;
+    BORDER-BOTTOM : 0px;
+    TEXT-ALIGN : center;
+}
+BODY.SC
+{
+    FONT-WEIGHT : BOLD;
+    FONT-SIZE : 10pt;
+    FONT-FAMILY : Verdana , Arial , helvetica , sans-serif;
+    BACKGROUND-COLOR : white;
+    COLOR : rgb(0 , 0 , 0);
+}
+/*width:170;
+    height:100;*/
+.row
+{
+}

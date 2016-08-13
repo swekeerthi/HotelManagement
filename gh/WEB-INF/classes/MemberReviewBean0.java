@@ -1,0 +1,74 @@
+package com.eResorts;
+import java.io.*;
+public class MemberReviewBean0 implements Serializable
+{
+private int FID;
+private String UserID;
+private String FeedBack;
+private String DateSubmitted;
+public void setFID(int FID)
+{
+this.FID=FID;
+}
+public int getFID()
+{
+return FID;
+}
+public void setUserID(String UserID)
+{
+this.UserID=UserID;
+}
+public String getUserID()
+{
+return UserID;
+}
+public void setFeebBack(String FeedBack)
+{
+this.FeedBack=FeedBack;
+}
+public String getFeedBack()
+{
+return FeedBack;
+}
+public void setDateSubmitted(String DateSubmitted)
+{
+this.DateSubmitted=DateSubmitted;
+}
+public String getDateSubmitted()
+{
+return DateSubmitted;
+}
+public int getreview()
+{
+   java.sql.Connection con=null;
+java.sql.Statement stmt=null;
+java.sql.ResultSet rs=null;
+int flag=0;
+	try{
+			
+			con = com.eResorts.ConnectionPool.getConnection();
+			stmt =  con.createStatement();
+			String Query = "Select * from feedback order by FId";
+			rs = stmt.executeQuery(Query);
+			while(rs.next())
+			{
+					
+					flag=1;
+						FID=Integer.parseInt(rs.getString(1));
+						UserID=rs.getString(2);
+						FeedBack=rs.getString(3);
+						DateSubmitted=rs.getString(4);
+					
+			}
+	                rs.close();
+			stmt.close();
+			con.close();
+		}
+		catch(Exception e)
+		{
+			
+               System.out.println("ex="+e);
+		}
+		return flag;
+		}
+		}

@@ -1,0 +1,7 @@
+<html>
+<body>
+<form action="./ex">
+<input type="submit" value="go">
+</form>
+</body>
+</html>

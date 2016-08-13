@@ -1,0 +1,27 @@
+import javax.servlet.*;
+import javax.servlet.http.*;
+import java.io.*;
+public class EditProfile1 extends HttpServlet
+{
+public void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
+{
+
+String UserID=(String)req.getSession().getAttribute("UserID");
+com.eResorts.EditProfileBean1 bean=new com.eResorts.EditProfileBean1 ();
+
+String	FirstName=request.getParameter("FirstName");
+String	LastName=request.getParameter("LastName");
+String      Age=request.getParameter("Age");
+String	EmailAddress=request.getParameter("EmailAddress");
+String	Address=request.getParameter("Address");
+String     ContactNumber=request.getParameter("ContactNumber");
+String     Occupation=request.getParameter("Occupation");
+int flag=bean.edit(UserID,FirstName,LastName,Age,EmailAddress,Address,ContactNumber,Occupation);
+System.out.println("it is servlet edituserprofile1 servlet");
+req.getSession().setAttribute("flag", new Integer(flag));
+
+getServletContext().getRequestDispatcher("/EditUserProfile1.jsp").forward(req,resp);
+}// service()
+}// class
+
+

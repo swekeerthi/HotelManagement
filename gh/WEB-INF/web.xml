@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+	<welcome-file-list>
+		<welcome-file>first welcome.html</welcome-file>
+	</welcome-file-list>
+<servlet>
+          <servlet-name>validateServlet</servlet-name>
+          <servlet-class>ValidateServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>validateServlet</servlet-name>
+         <url-pattern>/validateServlet</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>profileServlet</servlet-name>
+          <servlet-class>UserProfile</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>profileServlet</servlet-name>
+         <url-pattern>/UserProfile</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>acc0Servlet</servlet-name>
+          <servlet-class>Accommodation0</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>acc0Servlet</servlet-name>
+         <url-pattern>/Accommodation0</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>editprofileServlet</servlet-name>
+          <servlet-class>EditProfile</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>editprofileServlet</servlet-name>
+         <url-pattern>/EditProfile</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>editprofile1Servlet</servlet-name>
+          <servlet-class>EditProfile1</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>editprofile1Servlet</servlet-name>
+         <url-pattern>/EditProfile1</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>viewServlet</servlet-name>
+          <servlet-class>ViewLocations</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>viewServlet</servlet-name>
+         <url-pattern>/ViewLocations</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>reviewServlet</servlet-name>
+          <servlet-class>MemberView</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>reviewServlet</servlet-name>
+         <url-pattern>/MemberView</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>resortServlet</servlet-name>
+          <servlet-class>Resorts0</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>resortServlet</servlet-name>
+         <url-pattern>/Resorts0</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>resortServlet2</servlet-name>
+          <servlet-class>ViewResorts1</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>resortServlet2</servlet-name>
+         <url-pattern>/ViewResorts1</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>roomsServlet</servlet-name>
+          <servlet-class>ViewRooms0</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>roomsServlet</servlet-name>
+         <url-pattern>/ViewRooms0</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>roomsServlet2</servlet-name>
+          <servlet-class>ViewRooms1</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>roomsServlet2</servlet-name>
+         <url-pattern>/ViewRooms1</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>membersServlet</servlet-name>
+          <servlet-class>ViewMembers</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>membersServlet</servlet-name>
+         <url-pattern>/ViewMembers</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>bmembersServlet</servlet-name>
+          <servlet-class>ViewBlockedMembers</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>bmembersServlet</servlet-name>
+         <url-pattern>/ViewBlockedMembers</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>amembersServlet</servlet-name>
+          <servlet-class>ApprovedMembers</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>amembersServlet</servlet-name>
+         <url-pattern>/ApprovedMembers</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>BlockServlet</servlet-name>
+          <servlet-class>Block</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>BlockServlet</servlet-name>
+         <url-pattern>/Block</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>UnBlockServlet</servlet-name>
+          <servlet-class>UnBlock</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>UnBlockServlet</servlet-name>
+         <url-pattern>/UnBlock</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>addacc1Servlet</servlet-name>
+          <servlet-class>AddAccommodation1</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>addacc1Servlet</servlet-name>
+         <url-pattern>/AddAccommodation1</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>addresServlet</servlet-name>
+          <servlet-class>AddResort0</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>addresServlet</servlet-name>
+         <url-pattern>/AddResort0</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>sinv1Servlet</servlet-name>
+          <servlet-class>SendInvite0</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>sinv1Servlet</servlet-name>
+         <url-pattern>/SendInvite0</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>sinv2Servlet</servlet-name>
+          <servlet-class>SendInvite1</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>sinv2Servlet</servlet-name>
+         <url-pattern>/SendInvite1</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>invServlet</servlet-name>
+          <servlet-class>Invite0</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>invServlet</servlet-name>
+         <url-pattern>/Invite0</url-pattern>
+</servlet-mapping>
+<servlet>
+          <servlet-name>adduserServlet</servlet-name>
+          <servlet-class>AddUser1</servlet-class>
+</servlet>
+<servlet-mapping>
+         <servlet-name>adduserServlet</servlet-name>
+         <url-pattern>/AddUser1</url-pattern>
+</servlet-mapping>
+
+
+
+</web-app>
